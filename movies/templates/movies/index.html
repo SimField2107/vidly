@@ -1,6 +1,8 @@
-<h1> Home Page</h1>
+{% extends "movies/base.html" %}
 
-<table class="table">
+{% block content  %}
+<h1> Home Page</h1>
+<table class="table table-bordered table-hover">
     <thead>
         <tr>
             <th>Title</th>
@@ -20,3 +22,4 @@
         {% endfor %}
     </tbody>
 </table>
+    {% endblock   %}
